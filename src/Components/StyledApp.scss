@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: 0rem 0rem 1rem 5rem;
+
+    &__habitacion {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        margin-top: 2rem;
+
+        img {
+            width: 394px;
+            height: 269px;
+            object-fit: cover;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+            &:hover{
+                transform: scale(1.01);
+                box-shadow: 10px 10px 10px rgba(94, 94, 94, 0.3);
+                
+            }
+        }
+    }
+
+    &__info {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    &__rating {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .3rem;
+    }
+}
