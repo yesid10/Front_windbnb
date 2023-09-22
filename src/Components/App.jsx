@@ -4,20 +4,6 @@ import { HiStar } from 'react-icons/hi';
 import { useSelector } from "react-redux";
 
 const App = () => {
-
-    // const [listHabitaciones, setListHabitaciones] = useState([]);
-
-    // useEffect(() => {
-    //     getHabitacionesAPI('habitaciones')
-    //         .then((response) => {
-    //             if (!listHabitaciones.length) {
-    //                 setListHabitaciones(response);
-    //             }
-    //         })
-    //         .catch((error) => {
-    //             console.log(error);
-    //         });
-    // }, [listHabitaciones]);
     const habitaciones = useSelector((store) => store.roomReducer.room);
  
 
@@ -51,6 +37,10 @@ const App = () => {
                     ))
                 }
             </div>
+
+            <footer>
+                <span className='spanInfo'>created by <span className='userName'>yesid10</span> - <a href='https://github.com/yesid10'>VaYeDev.io</a></span>
+            </footer>
         </div>
 
     )

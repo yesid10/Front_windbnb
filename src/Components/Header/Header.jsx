@@ -64,14 +64,14 @@ const Header = () => {
           <Modal.Header className="containerButtonsModal" >
             <button  >Helsinki, Finland</button>
             <button >Add guests</button>
-            <button className="btn__BorderNone" ><ImSearch style={{ color: '#EB5757' }} /></button>
+            <button className="btn__BorderNone" ><ImSearch style={{ color: '#EB5757' }} />Search</button>
           </Modal.Header>
 
         </Modal>
       </div>
-      <div>
-        <h4>Stays in Finland</h4>
-        <span>{listHabitaciones?.length}+ stays</span>
+      <div className="ContainerHeader__amountRoom">
+        <p>Stays in Finland</p>
+        <span className="amountRooms">{listHabitaciones?.length}+ <span>stays</span></span>
       </div>
     </div>
   )

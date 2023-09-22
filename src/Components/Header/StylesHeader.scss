@@ -4,8 +4,13 @@
         display: flex;
         width: 100%;
         justify-content: space-around;
+        align-items: center;
         margin-top: 2rem;
-        gap: 44%;
+        gap: 40%;
+
+        img{
+          width: 9rem;
+        }
 
         .containerButtons {
             display: flex;
@@ -15,6 +20,7 @@
             cursor: pointer;
             box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
             border-radius: 1.3rem;
+            margin-right: 2.5rem;
 
             &:hover {
                 background-color: #fdfdfdcc;
@@ -37,22 +43,41 @@
                 border: none;
             }
         }
-
-
     }
 
+    &__amountRoom{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 6rem;
+        gap: 55%;
+
+        p{
+            font-size: 1.5rem;
+            font-weight: 900;
+        }
+        .amountRooms{
+            font-size: 1.2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20%;
+        }
+    }
 
 }
 
 .ui.fullscreen.modal>.header {
     display: flex;
     justify-content: space-between;
+    margin: 1rem 2rem 0 2rem;
 }
 .ui.fullscreen.modal {
     width: 100% !important;
 }
 .ui.modal {
     position: absolute;
+    height: 50vh;
     top:-2%;
     display: none;
     z-index: 1001;
