@@ -1,14 +1,13 @@
-.ContainerHeader{
+.ContainerHeader {
 
-    &__DivLogo{
+    &__DivLogo {
         display: flex;
         width: 100%;
         justify-content: space-around;
         margin-top: 2rem;
-        gap: 35%;
-    }
+        gap: 44%;
 
-    .containerButtons{
+        .containerButtons {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -17,24 +16,74 @@
             box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
             border-radius: 1.3rem;
 
-            &:hover{
+            &:hover {
                 background-color: #fdfdfdcc;
                 box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
                 transition: box-shadow 4s ease-in;
             }
-            
-            button{
+
+            span {
                 display: flex;
                 justify-content: center;
                 align-self: center;
                 background-color: transparent;
                 border: none;
-                border-right: 2px solid  #F2F2F2;
+                border-right: 2px solid #F2F2F2;
                 padding: 1rem;
                 cursor: pointer;
             }
-            .btn__BorderNone{
+
+            .btn__BorderNone {
                 border: none;
             }
         }
+
+
+    }
+
+
+}
+
+.ui.fullscreen.modal>.header {
+    display: flex;
+    justify-content: space-between;
+}
+.ui.fullscreen.modal {
+    width: 100% !important;
+}
+.ui.modal {
+    position: absolute;
+    top:-2%;
+    display: none;
+    z-index: 1001;
+    text-align: left;
+    background: #fff;
+    border: none;
+    box-shadow: 1px 3px 3px 0 rgba(0,0,0,.2), 1px 3px 15px 2px rgba(0,0,0,.2);
+    transform-origin: 50% 25%;
+    flex: 0 0 auto;
+    border-radius: 0.28571429rem;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+    will-change: top,left,margin,transform,opacity;
+}
+.containerButtonsModal {
+
+    button{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-self: center;
+        background-color: transparent;
+        border: none;
+        border-right: 2px solid #F2F2F2;
+        padding: 1rem;
+        cursor: pointer;
+    }
+   
+    .btn__BorderNone {
+        border: none;
+    }
 }

@@ -1,7 +1,7 @@
 import axios from "axios"
 import { setRooms } from "../reducers/roomReducer.js";
 
-const URL_API_FAKE = 'https://back-windbnb.onrender.com/'
+const URL_API_FAKE = 'https://back-windbnb-2.onrender.com/'
 
 export const getHabitacionesAPI = (endpoint) => {
     return async (dispatch) => {

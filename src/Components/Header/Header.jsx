@@ -52,19 +52,19 @@ const Header = () => {
           <img src={ImgLogo} alt="Logo_windbnb" />
         </figure>
         <Button className="containerButtons" onClick={() => dispatchButtoanSemantic({ type: 'open', size: 'fullscreen' })}>
-          <button >Helsinki, Finland</button>
-          <button>Add guests</button>
-          <button className="btn__BorderNone"><ImSearch style={{ color: '#EB5757' }} /></button>
+          <span>Helsinki, Finland</span>
+          <span>Add guests</span>
+          <span className="btn__BorderNone"><ImSearch style={{ color: '#EB5757' }} /></span>
         </Button>
         <Modal
           size={size}
           open={open}
           onClose={() => dispatchButtoanSemantic({ type: 'close' })}
         >
-          <Modal.Header className="containerButtons">
-              <button >Helsinki, Finland</button>
-              <button>Add guests</button>
-              <button className="btn__BorderNone"><ImSearch style={{ color: '#EB5757' }} /></button>
+          <Modal.Header className="containerButtonsModal" >
+            <button  >Helsinki, Finland</button>
+            <button >Add guests</button>
+            <button className="btn__BorderNone" ><ImSearch style={{ color: '#EB5757' }} /></button>
           </Modal.Header>
 
         </Modal>
